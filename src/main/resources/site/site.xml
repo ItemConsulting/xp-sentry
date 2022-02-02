@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+  <mappings>
+    <mapping filter="/site/filters/sentry.js" order="0" />
+  </mappings>
+
+  <processors>
+    <response-processor name="sentry-tracing" />
+  </processors>
+
+  <form>
+    <input name="sendPersonalInformation" type="CheckBox">
+      <label>Send username and users ip-address (May not be GDPR-compliant in your country)</label>
+      <help-text>By selecting this, personal information will be submitted to Sentry, and this may be in breach of GDPR</help-text>
+    </input>
+  </form>
+</site>
